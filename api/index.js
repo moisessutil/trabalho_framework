@@ -8,7 +8,11 @@ const produtosRoutes = require('./routes/produtos');
 app.use(cors());
 app.use(express.json());
 
+// ... suas rotas e middlewares (cors, express.json, etc.)
 app.use('/produtos', produtosRoutes);
+
+// Exportar o app para a Vercel gerenciar as requisições
+module.exports = app;
 
 const PORT = 3000;
 
