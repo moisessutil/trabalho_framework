@@ -9,7 +9,8 @@ app.use(cors());
 app.use(express.json());
 
 // ... suas rotas e middlewares (cors, express.json, etc.)
-app.use('/produtos', produtosRoutes);
+//app.use('/produtos', produtosRoutes);
+app.use('/api/produtos', produtosRoutes);
 
 // Exportar o app para a Vercel gerenciar as requisições
 module.exports = app;

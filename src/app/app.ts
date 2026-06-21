@@ -11,7 +11,8 @@ import { FormsModule } from '@angular/forms';
 })
 export class App implements OnInit {
 
-  apiUrl = 'http://localhost:3000/produtos';
+  //apiUrl = 'http://localhost:3000/produtos';
+  apiUrl = '/api/produtos';
 
   produtos: any[] = [];
 
